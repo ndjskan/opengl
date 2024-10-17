@@ -31,11 +31,11 @@ int main()
 	}; const int size = sizeof(triangle) / 4;
 	
 	glfwInit();
-	GLFWwindow* window = glfwCreateWindow(window_x, window_y, "opengl", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(1280, 720, "opengl", NULL, NULL);
 	glfwMakeContextCurrent(window);
 	glfwSwapInterval(0);
 	gladLoadGL();
-	glViewport(0, 0, window_x, window_y);
+	glViewport(0, 0, 1280, 720);
 	int vertexshader = glCreateShader(GL_VERTEX_SHADER);
 	glShaderSource(vertexshader, 1 , &vertex_shader_source,NULL);
 	glCompileShader(vertexshader);
