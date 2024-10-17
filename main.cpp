@@ -65,7 +65,7 @@ int main()
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 		glClear(GL_COLOR_BUFFER_BIT);
-		glBufferData(GL_ARRAY_BUFFER, size, final, GL_DYNAMIC_DRAW);
+		glBufferData(GL_ARRAY_BUFFER, size, triangle, GL_DYNAMIC_DRAW);
 		glDrawArrays(GL_TRIANGLES, 0, (size / 4) / 2);
 	}
 	
